@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  
+}
+
+
+.mainpage-div {
+    font-family: "Barlow";
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/Assets/Iteration-1-assets/home-banner.png');
+    background-size: 100% 100%;
+
+  }
+
+  .mainpage-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    background-color: #ce2829;
+    width: 100%;
+  }
+
+  .mainpage-header img {
+    max-width: 100%; 
+    height: auto; 
+    width: 300px; 
+  }
+
+  .hero-div {
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -10px;
+    padding: 0;
+  }
+
+.firsat {
+  color: #FDC913;
+  font-family: "Playwrite CU", cursive;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.kod-ac {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  font-weight: lighter;
+  letter-spacing: -0.1rem;
+  transform: scaleY(1.8);
+  margin-top: 0;
+  text-align: center;
+}
+
+.pizz-doy {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  font-weight: lighter;
+  letter-spacing: -0.1rem;
+  transform: scaleY(1.8);
+  line-height: 18px;
+  text-align: center;
+}
+
+.aciktim-button {
+  background-color: #FDC913;
+  width: 10vw;
+  height: auto;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: #292929;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'suse';
+  font-size: 16px;
+  font-weight: 700;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.aciktim-button:hover {
+  transform: scale(1.1);
+  border: 2px solid #FDC913;
+}
+
+.aciktim-button:active {
+  transform: scale(0.9);
+  
+}
+
+.aciktim-button:focus,
+.aciktim-button:focus-visible {
+  outline: none; 
+}
+
+.nav-div {
+  display: flex;
+  padding: 1.5rem;
+  background-color: white;
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-menu-item {
+  text-decoration: none;
+  background-color: white;
+  color: #292929;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  font-weight: 675;
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+  align-items: center; 
+  border-radius: 50px;
+  padding: 15px 28px;
+  transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
+}
+
+.nav-menu-item:hover {
+  background-color: #292929;
+  color: white;
+  border: none;
+  transform: scaleX(1.05); 
+  transform-origin: left; 
+}
+
+.crt-div {
+  background-color: #FAF7F2; 
+  width: 100%; 
+  height: 100vh;
+  padding: 0; 
+  margin: 0; 
+}
+
+.crt-parent {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr; /* Adjust column sizes */
+  grid-template-rows: 1.2fr 1.2fr; /* Adjust row sizes */
+  gap: 20px;
+  height: 60vh;
+}
+
+.crt-child1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-image: url("/Assets/Iteration-2-aseets/cta/kart-1.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.crt-child2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background-image: url("/Assets/Iteration-2-aseets/cta/kart-2.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  color: white;
+}
+
+.crt-child3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-image: url("/Assets/Iteration-2-aseets/cta/kart-3.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  color: #d93c3c;
+}
+
+.crt-div {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
