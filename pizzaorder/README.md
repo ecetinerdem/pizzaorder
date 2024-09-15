@@ -1,3 +1,6 @@
+if you want to watch where ı am for the project, you can check out my recording here:
+https://www.loom.com/share/3d2f8482b3b24f58adb86e952ed82447?sid=b6263e7c-b5ec-41d5-be08-916d546fbe7c
+
 # Sprint Challenge: _Teknolojik Yemekler - SPA_
 
 ## Proje Açıklaması
@@ -63,20 +66,21 @@ Proje iki zorluk aşamalı,
 
 - [ ] 1. **Create Repo From Template & Clone:**
 
-   - Sağ üstteki yeşil "Use this template" butonu ile, bir kopya oluşturun. işlemi tamamlandıktan sonra, kendi GitHub hesabınızda yer alan depo bağlantısını kopyalayın.
-   - VS Code'u açın ve terminali başlatın. Aşağıdaki komutu kullanarak depoyu bilgisayarınıza klonlayın:
-     ```sh
-     git clone <Yeni-Repo-URL'niz>
-     ```
-   - Örnek:
-     ```sh
-     git clone https://github.com/sizin-hesabiniz/fsweb-s7-challenge-pizza
-     ```
+  - Sağ üstteki yeşil "Use this template" butonu ile, bir kopya oluşturun. işlemi tamamlandıktan sonra, kendi GitHub hesabınızda yer alan depo bağlantısını kopyalayın.
+  - VS Code'u açın ve terminali başlatın. Aşağıdaki komutu kullanarak depoyu bilgisayarınıza klonlayın:
+    ```sh
+    git clone <Yeni-Repo-URL'niz>
+    ```
+  - Örnek:
+    ```sh
+    git clone https://github.com/sizin-hesabiniz/fsweb-s7-challenge-pizza
+    ```
 
 2. **VS Code'da Geliştirmeye Başlamak:**
    - VS Code'u açın ve `File -> Open Folder` seçeneğiyle projeyi açın.
 
 - Terminalde aşağıdaki komutları sırasıyla çalıştırarak proje bağımlılıklarını yükleyin ve projeyi başlatın:
+
   ```sh
   npm install
   npm run dev
@@ -85,6 +89,7 @@ Proje iki zorluk aşamalı,
 - [ ] Yeni reponuzu bilgisayarınıza klonlayın
 
 3. **Geliştirmeye Başlayın** 🤓 👩‍💻 🧑‍💻
+
 - [ ] Main branch üzerinde çalışın
 - [ ] Comitinizi pushlayın: `git push origin main`
 - [ ] Farklı paketler kullanmaya çalışın.
@@ -190,7 +195,7 @@ IT1'i bitirdikten sonra çalışmanı daha da ileri götürebilirsin. Buradaki h
   - [ ] Sipariş POST edilirken bir ağ hatası olasılığı için kullanıcıya geribildirim verebilmelisin (örnek: İnternet'e bağlanılamadı)
 - [ ] Tasarım Güncellemesi: **Anasayfa** çok daha çeşitli tasarım öğeleriyle zenginleştir.
 - [ ] Tasarım Güncellemesi: **Sipariş** Form elemanlarını (inputlar), özel renk ve tasarım diline göre güncelle
-- [ ] Cypressle daha çok test yaz. 
+- [ ] Cypressle daha çok test yaz.
 
 İpucu: Özelleştirilmiş Checkbox ve Radio için [W3 örneğine](https://www.w3schools.com/howto/howto_css_custom_checkbox.asp) bakabilirsiniz.
 İpucu: Sayfalar arası veri taşırken, (sipariş formundan, sonuş sayfasına), router veya başka bir global state management aracı kullanmadan, sadece [Prop-Lifting](https://react.dev/learn/sharing-state-between-components) tekniğiyle, projenizi geliştirmenizi bekliyoruz.
