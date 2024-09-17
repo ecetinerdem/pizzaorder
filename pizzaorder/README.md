@@ -1,5 +1,5 @@
 if you want to watch where ı am for the project, you can check out my recording here:
-https://www.loom.com/share/3d2f8482b3b24f58adb86e952ed82447?sid=b6263e7c-b5ec-41d5-be08-916d546fbe7c
+https://www.loom.com/share/7b234fd2ba584a6a98992473433780b6?sid=0b4490e0-980c-4a1b-9710-f343f828c724
 
 # Sprint Challenge: _Teknolojik Yemekler - SPA_
 

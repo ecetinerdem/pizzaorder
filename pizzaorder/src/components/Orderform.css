@@ -292,3 +292,254 @@ html, body {
     color: black; /* Show black checkmark when checked */
 }
 
+
+/* ... (previous CSS remains unchanged) ... */
+
+/* Name and Note inputs styling */
+.name-note-div {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+    padding-left: 32.5%;
+    gap: 10px;
+}
+
+.name-div, .note-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.name-div label, .note-div label {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.name-div input, .note-div input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    background-color: #f9f4ed;
+    color: #333;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.name-div input:focus, .note-div input:focus {
+    border-color: #ffd233;
+    outline: none;
+}
+
+
+
+/* Add asterisk to required fields */
+.name-div label::after, .note-div label::after {
+    content: " *";
+    color: red;
+    font-weight: normal;
+}
+
+.separator-div {
+    width: 35%;
+    border: solid 0.5px lightgray;
+    margin-left: 33.5%;
+}
+
+.amount-card-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 8rem;
+    padding-left: 46%;
+    width: 10%;
+    gap: 102px;
+
+}
+
+.quantity-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.decrease-btn, .increase-btn {
+    background-color: #f9f4ed; /* Initial background color */
+    border: 1px solid #f0f0f0; /* Initial border color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s, border-color 0.5s; /* Smooth transition */
+}
+
+.decrease-btn:hover, .increase-btn:hover {
+    border-color: transparent; 
+}
+
+.decrease-btn:active, .increase-btn:active {
+    background-color: #ffd233; 
+    border-color: #ffd233; 
+}
+
+.decrease-btn:focus, .increase-btn:focus {
+    outline: none; 
+}
+
+
+.card {
+    background-color: #fefaf5;
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+    width: 250px;  /* Maintain the width */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+    
+    /* Fix the height */
+    height: 120px; /* Desired height */
+    min-height: 120px; /* Ensure it doesn’t shrink below this */
+    max-height: 210px; /* Prevent it from expanding beyond this */
+    
+    /* Handle overflow if content exceeds the fixed height */
+    overflow: hidden; /* or `overflow: auto` for a scroll bar */
+}
+  
+.card-content {
+    margin-bottom: 10px;
+
+}
+  
+.item {
+    display: flex;
+    justify-content: space-between;
+    
+}
+  
+.price, .total-price {
+    color: red;
+    margin-top: 13px;
+}
+  
+.total-price {
+    font-weight: bold;
+}
+  
+.order-button {
+    width: 100%;
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    outline: none;
+}
+  
+.order-button:focus {
+    outline: none;
+    box-shadow: none; /* Same color as the button */
+}
+  
+.order-button:hover {
+    background-color: #ffb300;
+}
+
+
+
+
+/* Footer css */
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 200px;
+  }
+  
+  
+  .footer-tekno {
+    font-size: 1.9rem;
+  }
+  .footer-tekno2 {
+    margin-top: -20px;
+    font-size: 1.9rem;
+    
+  }
+  
+  .footer-section-address {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+  }
+  
+  
+  
+  .footer-section-menu {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .menu-list {
+    margin: 5px;
+  }
+  
+  .footer-section-instagram {
+    grid-column: 3 / 4;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .gallery img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.7em;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .copyright {
+    margin-left: 50px;
+    font-size: 1.1em;
+    margin-bottom: -10px;
+  }
+  
+  .twitter-icon {
+    margin-right: 50px;
+    margin-top: 10px;
+  }
