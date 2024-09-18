@@ -447,11 +447,14 @@ body {
 
 /* Cards for products */
 
+
+
 .container {
   display: grid;
   grid-template-columns: repeat(3, 0.9fr);
   gap: 20px; /* Space between cards */
   padding: 20px; /* Space around the container */
+  
 }
 
 .grid {
@@ -467,7 +470,7 @@ body {
   overflow: hidden;
   text-align: center;
   padding: 20px;
-  height: 48vh;
+  min-height: 45vh;
 }
 
 
@@ -475,7 +478,7 @@ body {
   width: 100%;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 
