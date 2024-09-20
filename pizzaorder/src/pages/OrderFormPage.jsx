@@ -21,6 +21,8 @@ function OrderFormPage({
   handleNoteChange,
   increaseQuantity,
   decreaseQuantity,
+  errors, 
+  handleOrderSubmit,
 }) {
   return (
     <div className='orderform'>
@@ -90,6 +92,8 @@ function OrderFormPage({
               />
               <label htmlFor="sizeL">L</label>
             </div>
+            {/* Error message for size */}
+            {errors.size && <p className="error">{errors.size}</p>}
           </div>
 
           <div className="crust-selection">
@@ -106,6 +110,8 @@ function OrderFormPage({
               <option value="cheesy">Peynir Kenar</option>
               <option value="garlic">Sarımsaklı Kenar</option>
             </select>
+            {/* Error message for crust */}
+            {errors.crust && <p className="error">{errors.crust}</p>}
           </div>
         </div>
       </div>
@@ -144,6 +150,8 @@ function OrderFormPage({
               </label>
             ))}
           </div>
+          {/* Error message for toppings */}
+          {errors.toppings && <p className="error">{errors.toppings}</p>}
         </div>
       </div>
       <div className='name-note-div'>
@@ -156,6 +164,8 @@ function OrderFormPage({
             onChange={handleNameChange}
             value={name}
           />
+          {/* Error message for name */}
+          {errors.name && <p className="error">{errors.name}</p>}
         </div>
         <div className="note-div">
           <label htmlFor="note">Sipariş Notunuz</label>
@@ -165,6 +175,8 @@ function OrderFormPage({
             onChange={handleNoteChange}
             value={note}
           />
+          {/* Error message for note */}
+          {errors.note && <p className="error">{errors.note}</p>}
         </div>
       </div>
       <div className='separator-div'></div>
@@ -187,7 +199,17 @@ function OrderFormPage({
                 <span className="total-price">{totalPrice.toFixed(2)}₺</span>
               </div>
             </div>
-            <button className="order-button">SİPARİŞ VER</button>
+            <Link to="/ordercomplete" />
+            <button
+  className="order-button"
+  onClick={handleOrderSubmit}
+  disabled={
+    errors.size || errors.crust || errors.toppings || errors.name || errors.note
+  }
+>
+  SİPARİŞ VER
+</button>
+            
           </div>
         </div>
       </div>
