@@ -1,3 +1,6 @@
+
+https://pizzaorder-seven.vercel.app/
+
 if you want to watch where ı am for the project, you can check out my recording here:
 https://www.loom.com/share/5ea7c390020d42b584b321398b092b6e?sid=b45cda4a-0053-410c-a8ae-6f201cf29070
 
